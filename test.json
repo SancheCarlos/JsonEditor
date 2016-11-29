@@ -1,0 +1,11 @@
+{
+			"title": "contact", // the name of our JSON
+			"type": "object", // we're declaring an object
+			"properties": {
+				/* properties we want: postcode...
+				** we must precise the type of the data */
+				"postcode":{	
+					"type": "string"
+				}
+			}
+}
