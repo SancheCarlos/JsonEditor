@@ -1,0 +1,37 @@
+[
+ {
+   "title": "UXP Sprint review - Next",
+   "url": "http://10.25.31.4:8080/sprint-reviews/sprint_6/UXP-Sprint-review_Next_Q&A.mp4",
+   "description": "What's coming next: UXP roadmap overview. ",
+   "author": "ADNENE MANAI",
+   "date": "2016/09/28",
+   "level": "user",
+   "tags": " label label-success",
+   "category": "sprint review",
+   "color": "label label-primary",
+   "keyword": "misysboard",
+   "colorkey": "label label-misys",
+   "tagged": "UXP",
+   "tagcolor": "label label-uxp",
+   "poster": "icons/posters/uxp-next.png",
+   "image": "icons/misys.png",
+   "id": "uxp-sprint-review-next"
+ },
+ {
+   "title": "UXP Sprint review - Template Sharing",
+   "url": "http://10.25.31.4:8080/sprint-reviews/sprint_6/UXP-Sprint-review_05_template sharing.mp4",
+   "description": "David is walking us through template creation and sharing using the Component editor. You can see how to attach reports and data t",
+   "author": "DAVID BOCLE",
+   "date": "2016/09/28",
+   "level": "developper",
+   "tags": " label label-danger",
+   "category": "sprint review",
+   "color": "label label-primary",
+   "keyword": "misysboard",
+   "colorkey": "label label-misys",
+   "tagged": "UXP",
+   "tagcolor": "label label-uxp",
+   "poster": "icons/posters/uxp-share.png",
+   "image": "icons/developpers.png",
+   "id": "uxp-sprint-review-template-sharing"
+ }]
