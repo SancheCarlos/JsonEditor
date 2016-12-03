@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app = "form">
+<head>
+  <meta charset="utf-8">
+  <title>test angularjs</title>
+  <link rel="stylesheet" type="text/css" src="bower_components/bootstrap/dist/css/bootstrap.min.js">
+</head>
+<body>
+  <form id="myForm" ng-controller="ChampsController as ChampsCtrl" ng-submit="ChampsCtrl.addchamps()">
+    text: <input type="text" name="firstone" class="controlled"/>
+    text: <input type="text" name="secondone" class="controlled"/>
+    text; <input type="text" name="thirdone" class="controlled"/><br />
+    checkbox: <input type="checkbox" name="vehicle" class="controlled" value="Bike"> I have a bike<br />
+    checkbox: <input type="checkbox" name="vehicle" class="controlled" value="Car"> I have a car<br /><br />
+    collor: <input type="color" name="color" class="controlled"/><br />
+    datetime: <input type="datetime" name="datetime" class="controlled"/><br />
+    datetime-local: <input type="datetime-local" name="datetime-local" class="controlled"/><br />
+    email: <input type="email" name="email" class="controlled"/><br />
+    month: <input type="month" name="month" class="controlled"/><br />
+    number: <input type="number" name="number" class="controlled"/><br />
+    range: <input type="range" name="range" class="controlled"/><br />
+    search: <input type="search" name="search" class="controlled"/><br />
+    telephone: <input type="tel" name="tel" class="controlled"/><br />
+    url: <input type="url" name="url" class="controlled"/><br />
+    week: <input type="week" name="week" class="controlled"/><br />
+    date: <input type="date" name="date de naissance" class="controlled"/><br />
+    radio: <input type="radio" name="gender" class="controlled" value="male" checked> Male<br />
+    radio: <input type="radio" name="gender" class="controlled" value="female"> Female<br />
+    radio: <input type="radio" name="gender" class="controlled" value="other"> Other
+    <br /><br />
+    <input type="submit" value="Submit !" />
+    <input type="reset" value="Reset !" />
+    <br /><br />
+  </form>
+  <div ng-controller="myController as myCtrl">
+  <hr class="divider">
+  <h3>Fichier JSON</h3>
+  <div ng-repeat="js in json">
+  <hr class="divider" style="border-style: dashed; border-color: grey;">
+  <h4>Name: {{js.name}}</h4>
+  <h4>Code: {{js.code}}</h4>
+  </div>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="getnames.js"></script>
+</body>
+</html>
