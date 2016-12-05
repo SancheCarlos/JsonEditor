@@ -31,4 +31,7 @@ This line will install angularjs and bootstrap packages too.
 
 Utilisation
 ___________________________________________________________________________
-
+To begin with, in the file.js : you have to modify the filename variable,
+ if you want to edit a new file.
+then in the html file you can add any kind of fields accoarding to your json file.
+the original content of the html file is an exemple of various kind of inputs.
