@@ -1,4 +1,5 @@
 (function(){
+	var filename = "country_codes.json";
 	var app = angular.module('form', [ ]);//We create a module with no dependencies
 	var objet = {};//We create an empty javascript object
 	app.controller('ChampsController', function(){//Controller that will add controlled inputs into a json object
@@ -28,24 +29,24 @@
 		}
 	});
 	app.controller('myController', ['$scope', '$http', function($scope, $http){//Controller that will print old json file
-		$http.get('country_codes.json').success(function(data){
+		$http.get(filename).success(function(data){
 			console.log("It is a valid JSON file, indeed.");
 			$scope.oldjson = data;
 			$scope.$json = $scope.oldjson;
 			console.log($scope.$json);
 		});
-		$http.get('country_codes.json').error(function(data){
+		$http.get(filename).error(function(data){
 			console.log("It is not a valid JSON file!");
 		});
 	}]);
 	app.controller('jsonWriter', ['$scope', '$http', function($scope, $http){//Controller that will write old json file into json output
-    	$http.get('country_codes.json').success(function(data){
+    	$http.get(filename).success(function(data){
         	console.log("It is a valid JSON file, indeed.");
         	console.log(objet);
         	var textedJson = JSON.stringify(data, null, 2);
         	document.getElementById("new_json").value += textedJson;
         	});
-        $http.get('country_codes.json').error(function(data){
+        $http.get(filename).error(function(data){
         	console.log("It is not a valid JSON file!");
     	});
 	}]);
