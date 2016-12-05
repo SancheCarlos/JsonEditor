@@ -1,0 +1,26 @@
+{
+  "name": "JSONEditor",
+  "description": "Json editor",
+  "main": "index.html",
+  "authors": [
+    "ben mohma",
+    "carlos sanchez rojas",
+    "victor bertin"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.9",
+    "jquery": "^3.1.1",
+    "ajax": "^2.1.2",
+    "bootstrap": "^3.3.7"
+  }
+}
