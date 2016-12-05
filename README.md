@@ -2,27 +2,32 @@ JSON Editor
 
 Synopsis
 ___________________________________________________________________________
-JSON Editor est un outil permettant de modifier le contenu d'un fichier .json
-en ajoutant … ce dernier un objet … l'aide d'un formulaire. Le fichier lui-meme
-n'est pas modifi‚, mais l'outil offre … l'utilisateur le nouveau contenu dans un
- champ qu'il n'a plus qu'… copier dans son fichier de base.
+JSON Editor is a tool allowing to modify the content of a .json file by 
+adding to the previous file, an object with the help of a form. The file 
+itself isn't modified but our tool offers to the user the new content in 
+another field where he just needs to copy it into his original file.
 
-Les fichiers utilises
+Used files
 ___________________________________________________________________________
-index.html: la page web representant JSON Editor. C'est le front de l'outil.
-Sans les scripts, il ne ferait rien mais il permet leur utilisation.
+index.html: the web page representing the JSON Editor, it's the page that 
+allows user to modify and see his content.
 
-.js: le script qui gere toute la page
-*.json: les fichiers json … modifier.
+JSONEditor.js: the core, the script that handles all the json files and 
+new forms.
+*.json: json files to modify.
+
+Requirements
+___________________________________________________________________________
+- Bower
+- Localhost
 
 Installation
 ___________________________________________________________________________
-Vous aurez besoin bien sur d'angular, et jquery pour utiliser JSONEditor. Si vous
-n'avez pas de serveur local … utiliser, installer http-server. Pour les installer, 
-utiliser les commandes suivantes:
-_ bower install angular
-_ bower install jquery
-_ bower install http-server
+A simple "bower install" command allows you to install all needed 
+dependences to run the project.
+Use the following command into the desired folder:
+"Bower install https://github.com/SancheCarlos/JsonEditor.git"
+This line will install angularjs and bootstrap packages too.
 
 Utilisation
 ___________________________________________________________________________
