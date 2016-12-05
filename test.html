@@ -3,43 +3,95 @@
 <head>
   <meta charset="utf-8">
   <title>test angularjs</title>
-  <link rel="stylesheet" type="text/css" src="bower_components/bootstrap/dist/css/bootstrap.min.js">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <form id="myForm" ng-controller="ChampsController as ChampsCtrl" ng-submit="ChampsCtrl.addchamps()">
-    text: <input type="text" name="firstone" class="controlled"/>
-    text: <input type="text" name="secondone" class="controlled"/>
-    text; <input type="text" name="thirdone" class="controlled"/><br />
-    checkbox: <input type="checkbox" name="vehicle" class="controlled" value="Bike"> I have a bike<br />
-    checkbox: <input type="checkbox" name="vehicle" class="controlled" value="Car"> I have a car<br /><br />
-    collor: <input type="color" name="color" class="controlled"/><br />
-    datetime: <input type="datetime" name="datetime" class="controlled"/><br />
-    datetime-local: <input type="datetime-local" name="datetime-local" class="controlled"/><br />
-    email: <input type="email" name="email" class="controlled"/><br />
-    month: <input type="month" name="month" class="controlled"/><br />
-    number: <input type="number" name="number" class="controlled"/><br />
-    range: <input type="range" name="range" class="controlled"/><br />
-    search: <input type="search" name="search" class="controlled"/><br />
-    telephone: <input type="tel" name="tel" class="controlled"/><br />
-    url: <input type="url" name="url" class="controlled"/><br />
-    week: <input type="week" name="week" class="controlled"/><br />
-    date: <input type="date" name="date de naissance" class="controlled"/><br />
-    radio: <input type="radio" name="gender" class="controlled" value="male" checked> Male<br />
-    radio: <input type="radio" name="gender" class="controlled" value="female"> Female<br />
-    radio: <input type="radio" name="gender" class="controlled" value="other"> Other
-    <br /><br />
-    <input type="submit" value="Submit !" />
-    <input type="reset" value="Reset !" />
-    <br /><br />
-  </form>
-  <div ng-controller="myController as myCtrl">
-  <hr class="divider">
-  <h3>Fichier JSON</h3>
-  <div ng-repeat="js in json">
-  <hr class="divider" style="border-style: dashed; border-color: grey;">
-  <h4>Name: {{js.name}}</h4>
-  <h4>Code: {{js.code}}</h4>
-  </div>
+      <div class="container-fluid">
+        <hr class="divider" style="border: 3px solid grey;">
+        <div class="row">
+          <div class="col-md-4 col-xs-4">
+            <div ng-controller="myController as myCtrl">
+              <h3 text align="center">Fichier JSON</h3>
+              <hr class="divider" style="border-style: dashed; border-color: grey;">
+              <pre>{{oldjson | json}}</pre>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-4" style="border-right: 4px dashed grey; border-left: 4px dashed grey;">
+            <div>
+              <h3 text align="center">Formulaire</h3>
+              <hr class="divider" style="border-style: dashed; border-color: grey;">
+              <form id="myForm" ng-controller="ChampsController as ChampsCtrl" ng-submit="ChampsCtrl.addchamps()">
+                text:
+                <br /><input type="text" name="thirdone" class="controlled"/><br />
+                <br />
+                checkbox:   
+                <br /><input type="checkbox" name="vehicle" class="controlled" value="Bike"> I have a bike
+                <br /><input type="checkbox" name="vehicle" class="controlled" value="Car"> I have a car<br />
+                <br />
+                color:
+                <br /><input type="color" name="color" class="controlled"/><br />
+                <br />
+                datetime:
+                <br /><input type="datetime" name="datetime" class="controlled"/><br />
+                <br />
+                datetime-local:
+                <br /><input type="datetime-local" name="datetime-local" class="controlled"/><br />
+                <br />
+                email:
+                <br /><input type="email" name="email" class="controlled"/><br />
+                <br />
+                month:
+                <br /><input type="month" name="month" class="controlled"/><br />
+                <br />
+                number:
+                <br /><input type="number" name="number" class="controlled"/><br />
+                <br />
+                range:
+                <br /><input type="range" name="range" class="controlled"/ style="width: 40%;"><br />
+                <br />
+                search:
+                <br /><input type="search" name="search" class="controlled"/><br />
+                <br />
+                telephone:
+                <br /><input type="tel" name="tel" class="controlled"/><br />
+                <br />
+                url:
+                <br /><input type="url" name="url" class="controlled"/><br />
+                <br />
+                week:
+                <br /><input type="week" name="week" class="controlled"/><br />
+                <br />
+                date:
+                <br /><input type="date" name="date de naissance" class="controlled"/><br />
+                <br />
+                radio:
+                <br /><input type="radio" name="gender" class="controlled" value="male" checked> Male<br />
+                <input type="radio" name="gender" class="controlled" value="female"> Female<br />
+                <input type="radio" name="gender" class="controlled" value="other"> Other<br />
+                <br />textarea:
+                <br /><textarea rows="3" cols="40" name="comments" class="controlled"></textarea>
+                <br /><br />
+                <input type="submit" value="Submit !" />
+                <input type="reset" value="Reset !" />
+                <br /><br />
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <h3 text align="center">Votre nouveau fichier JSON</h3>
+            <hr class="divider" style="border-style: dashed; border-color: grey;">
+            <form>
+              <div ng-controller="jsonWriter">
+                <form>
+                  <textarea style="width:auto; height:380px; width: 380px" id="new_json">
+                  </textarea>
+                </form>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="divider" style="border: 4px solid grey;">
+      </div>
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="getnames.js"></script>
